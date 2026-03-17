@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const EditorialSection = () => {
   return (
-    <section className="py-[20vh]">
+    <section className="py-[15vh] md:py-[20vh]">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -15,16 +16,15 @@ const EditorialSection = () => {
             Our Philosophy
           </p>
           <h2 className="font-display text-3xl md:text-5xl leading-snug tracking-tight mb-8">
-            Every spice has a <em className="font-light">coordinate</em>, a harvest date, 
-            and a measurable potency. We believe precision is the highest form of respect 
-            for the ingredient.
+            Every spice has a <em className="font-light">story</em> — an origin, a harvest, 
+            a journey across oceans. We believe the best meals start with the finest ingredients.
           </h2>
-          <a
-            href="#"
+          <Link
+            to="/about"
             className="inline-block font-body text-xs uppercase tracking-spice text-muted-foreground border-b border-muted-foreground/30 pb-0.5 hover:text-foreground transition-colors"
           >
             Read Our Story
-          </a>
+          </Link>
         </motion.div>
       </div>
     </section>
